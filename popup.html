@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+    <style>
+      body {
+        width: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script defer src="popup.js"></script>
+    <form id="settingsForm">
+        <input type="checkbox" id="furigana" name="furigana" checked>
+        <label for="furigana">Disable furigana</label><br>
+        <input type="checkbox" id="coloring" name="coloring" checked>
+        <label for="coloring">Disable coloring</label><br>
+        <input type="checkbox" id="dictionary" name="dictionary" checked>
+        <label for="dictionary">Enable sticky dictionary</label>
+    </form>
+  </body>
+</html>
