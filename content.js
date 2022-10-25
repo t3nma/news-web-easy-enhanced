@@ -1,3 +1,5 @@
+remove_original_toggles();
+
 chrome.storage.sync.get('settings', (data) => {
     let settings = {
         furigana: true,
@@ -13,6 +15,20 @@ chrome.runtime.onMessage.addListener(function(request, _sender, sendResponse) {
     update_content(request);
     sendResponse("Message received: " + JSON.stringify(request));
 });
+
+function remove_original_toggles() {
+    const furigana_toggle = [...document.getElementsByClassName("js-toggle-ruby")];
+
+    furigana_toggle.forEach(function(element) {
+        element.remove();
+    });
+
+    const color_toggle = document.getElementById("js-toggle-color");
+
+    if (color_toggle) {
+        color_toggle.remove();
+    }
+}
 
 function update_content(toggles) {
     console.log("Updating content", toggles);

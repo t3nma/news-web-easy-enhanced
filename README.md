@@ -6,7 +6,7 @@ A chrome extension that provides configurations for an enhanced experience while
 
 Clicking on the extension icon from the Extensions tab in your browser will give you access to the following configuration options, **all set by default**:
 
-<img src="https://i.postimg.cc/8cz9SF4L/Screenshot-from-2022-10-23-19-57-20.png" alt="extension's menu" width="150" />
+<img src="https://i.postimg.cc/8cz9SF4L/Screenshot-from-2022-10-23-19-57-20.png" alt="extension's menu" width="200" />
 
 ### Disable furigana
 
