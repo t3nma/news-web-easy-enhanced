@@ -93,8 +93,6 @@ function toggle_dictionary(active) {
             }
         }
 
-        popup.style.visibility = active ? "hidden" : "visible";
-
         dicWin.forEach(function(element) {
             if (element.tagName == 'A') {
                 if (active) {
